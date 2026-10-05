@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | ▶ **Dùng thử demo (không cần cài đặt)** | **https://hoangduong92.github.io/sensei-agent/** |
-| 🎬 **Video giới thiệu 55 giây** | [media/sensei-agent-video.mp4](media/sensei-agent-video.mp4) |
+| 🎬 **Video giới thiệu 53 giây (có tiếng)** | **https://hoangduong92.github.io/sensei-agent/media/sensei-agent-video.mp4** |
 | 📄 **Proposal** | Nộp kèm qua Hackathon4U |
 
 ---
