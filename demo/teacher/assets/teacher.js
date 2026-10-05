@@ -133,7 +133,7 @@
       }).join('') + '</ul>';
     }).join('');
     return '<div class="side-in">' +
-      '<div class="brand"><span class="seal" aria-hidden="true">先輩</span><div><p class="wordmark">Sensei Agent</p><p class="tagline">' + esc(D.center.name) + '</p></div>' +
+      '<div class="brand"><span class="seal" aria-hidden="true">先生</span><div><p class="wordmark">Sensei Agent</p><p class="tagline">' + esc(D.center.name) + '</p></div>' +
       '<button class="side-x" data-act="menu" aria-label="Đóng menu">' + ic('x') + '</button></div>' +
       '<div class="me">' + '<span class="av on-dark" aria-hidden="true">' + who.a + '</span><div><p class="me-n">' + who.n + '</p><p class="me-r">' + who.r + '</p></div></div>' +
       groups +
@@ -169,7 +169,7 @@
   P.login = function () {
     return '<div class="login">' +
       '<div class="login-card">' +
-      '<div class="brand lg"><span class="seal" aria-hidden="true">先輩</span><div><p class="wordmark">Sensei Agent</p><p class="tagline">cho trung tâm dạy người Việt ở Nhật</p></div></div>' +
+      '<div class="brand lg"><span class="seal" aria-hidden="true">先生</span><div><p class="wordmark">Sensei Agent</p><p class="tagline">cho trung tâm dạy người Việt ở Nhật</p></div></div>' +
       '<p class="proto dark">' + ic('info', 'ic-xs') + PROTO + '</p>' +
       '<h1 class="h1" tabindex="-1">' + esc(D.center.name) + ' <span class="fict">(hư cấu)</span></h1>' +
       '<p class="lead">48 học viên · 3 lớp · 2 giáo viên. Chọn vai để xem Sensei Agent giúp người dạy thế nào, và chỗ nào con người luôn quyết.</p>' +
