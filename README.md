@@ -32,7 +32,7 @@
 
 | Vai | Link | Xem gì |
 |---|---|---|
-| Người học (điện thoại) | [demo/](https://hoangduong92.github.io/sensei-agent/demo/) | Đánh giá → lộ trình → bài hôm nay → giải thích. Nút "Hướng dẫn demo" dẫn qua từng cảnh. |
+| Người học (điện thoại) | [demo/](https://hoangduong92.github.io/sensei-agent/demo/) | Đánh giá → lộ trình → bài hôm nay → giải thích. Khung "Kịch bản demo" dẫn qua 9 cảnh. |
 | Giáo viên / trung tâm | [demo/teacher/](https://hoangduong92.github.io/sensei-agent/demo/teacher/) | Việc hôm nay, hàng chờ ngoại lệ, hồ sơ học viên, tin nhắn |
 | Vận hành đa tenant | [demo/ops/](https://hoangduong92.github.io/sensei-agent/demo/ops/) | Danh sách tenant, định tuyến model, đánh giá chất lượng, chi phí, sự cố |
 
