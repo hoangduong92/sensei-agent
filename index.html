@@ -1,3 +1,105 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Sensei Agent</title>
-<meta http-equiv="refresh" content="0; url=demo/"><link rel="canonical" href="demo/"></head>
-<body><p><a href="demo/">Mở demo Sensei Agent</a></p></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sensei Agent · Demo</title>
+<meta name="description" content="Gia sư AI cho cả người học và người dạy. Chọn một vai để dùng thử prototype.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+<style>
+  :root { --ai:#1F3A68; --ai-ink:#0F1F3A; --ai-soft:#E6EBF4; --paper:#F5F6F9; --card:#FFFFFF; --ink:#141D30; --muted:#5A6478; --line:#DCE1EA; --shu:#C8402A; --green:#2F7A4B; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:'Be Vietnam Pro',system-ui,sans-serif; background:var(--paper); color:var(--ink); line-height:1.5; }
+  a { color:inherit; }
+  .hero { background:var(--ai-ink); color:#fff; padding:56px 16px 120px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  .brand { display:flex; align-items:center; gap:14px; }
+  .mark { width:52px; height:52px; border-radius:12px; background:var(--shu); display:grid; place-items:center; font-family:'Noto Serif JP',serif; font-weight:900; font-size:19px; line-height:1; writing-mode:vertical-rl; }
+  .brand b { font-size:26px; letter-spacing:.06em; }
+  .event { font-size:13px; letter-spacing:.14em; color:#AFC0DE; font-weight:600; margin-top:2px; }
+  h1 { font-size:clamp(30px,5vw,50px); line-height:1.15; font-weight:800; margin-top:36px; max-width:760px; }
+  h1 em { font-style:normal; color:#FFB4A6; }
+  .lead { margin-top:14px; font-size:18px; color:#D3DCEC; max-width:640px; }
+  .roles { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:-84px; padding:0 16px; }
+  .role { background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; text-decoration:none; display:flex; flex-direction:column; box-shadow:0 10px 30px rgba(15,31,58,.10); transition:transform .18s, box-shadow .18s; }
+  .role:hover { transform:translateY(-4px); box-shadow:0 18px 40px rgba(15,31,58,.18); }
+  .role:focus-visible { outline:3px solid var(--shu); outline-offset:3px; }
+  .shot { height:190px; background:var(--ai-soft) center top / cover no-repeat; border-bottom:1px solid var(--line); }
+  .body { padding:20px 22px 22px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .tag { align-self:flex-start; font-size:12px; font-weight:700; letter-spacing:.12em; color:#fff; padding:4px 10px; border-radius:6px; }
+  .role h2 { font-size:21px; }
+  .role p { color:var(--muted); font-size:15px; flex:1; }
+  .go { margin-top:8px; font-weight:700; color:var(--ai); }
+  .go::after { content:" →"; }
+  .more { display:grid; grid-template-columns:1.2fr 1fr; gap:20px; margin:36px auto 0; padding:0 16px; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; }
+  .panel h3 { font-size:17px; margin-bottom:10px; }
+  video { width:100%; border-radius:10px; display:block; background:#000; }
+  ul { padding-left:18px; color:var(--muted); font-size:15px; }
+  li + li { margin-top:6px; }
+  .note { font-size:13px; color:var(--muted); margin-top:12px; }
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:36px 16px 48px; }
+  @media (max-width:860px) { .roles, .more { grid-template-columns:1fr; } .shot { height:160px; } }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">先生</div>
+        <div><b>Sensei Agent</b><div class="event">VJAI HACKATHON 2026 · PROTOTYPE</div></div>
+      </div>
+      <h1>Gia sư AI cho cả <em>người học</em> và <em>người dạy</em></h1>
+      <p class="lead">Người học có thầy riêng mỗi ngày. Giáo viên kèm được nhiều học viên hơn, vì agent đã lo phần theo dõi. Chọn một vai bên dưới để dùng thử.</p>
+    </div>
+  </header>
+  <main>
+    <div class="wrap roles">
+      <a class="role" href="demo/">
+        <div class="shot" style="background-image:url('media/learner-plan.png'); background-size:58%; background-position:center 16px;"></div>
+        <div class="body">
+          <span class="tag" style="background:var(--shu)">1 · NGƯỜI HỌC</span>
+          <h2>Gia sư AI cá nhân</h2>
+          <p>Đánh giá 15 phút → lộ trình riêng → bài mỗi ngày có chấm, giải thích, nhắc ôn. Có "Hướng dẫn demo" dẫn qua từng cảnh.</p>
+          <span class="go">Vào vai người học</span>
+        </div>
+      </a>
+      <a class="role" href="demo/teacher/#p=today">
+        <div class="shot" style="background-image:url('media/teacher-today.png')"></div>
+        <div class="body">
+          <span class="tag" style="background:var(--ai)">2 · GIÁO VIÊN</span>
+          <h2>Trợ giảng theo dõi học viên</h2>
+          <p>Hôm nay ai cần giúp, hàng chờ ngoại lệ, duyệt lộ trình, bật hoặc tắt việc agent được tự duyệt.</p>
+          <span class="go">Vào vai giáo viên</span>
+        </div>
+      </a>
+      <a class="role" href="demo/ops/">
+        <div class="shot" style="background-image:url('media/ops-tenants.png')"></div>
+        <div class="body">
+          <span class="tag" style="background:var(--green)">3 · VẬN HÀNH ĐA TENANT</span>
+          <h2>Nhiều trung tâm, một lõi agent</h2>
+          <p>Mỗi trung tâm, doanh nghiệp có dữ liệu và giáo trình riêng. Theo dõi chất lượng, chi phí, sự cố.</p>
+          <span class="go">Vào vai vận hành</span>
+        </div>
+      </a>
+    </div>
+    <div class="wrap more">
+      <section class="panel">
+        <h3>Video giới thiệu · 55 giây</h3>
+        <video src="media/sensei-agent-video.mp4" controls preload="metadata" poster="media/cover.png"></video>
+      </section>
+      <section class="panel">
+        <h3>Nên xem theo thứ tự</h3>
+        <ul>
+          <li><b>Người học:</b> bấm "Hướng dẫn demo", đi hết 9 cảnh (khoảng 7 phút).</li>
+          <li><b>Giáo viên:</b> mở "Hàng chờ" để thấy agent chỉ chuyển lên những việc cần người quyết.</li>
+          <li><b>Vận hành:</b> mở danh sách tenant, rồi một trung tâm bất kỳ.</li>
+        </ul>
+        <p class="note">Prototype thiết kế: dữ liệu mẫu, nhân vật hư cấu, chưa nối AI thật. Demo đang hiển thị gói kỹ năng đặc định; gói kính ngữ công sở dùng chung màn hình và lõi agent.</p>
+      </section>
+    </div>
+  </main>
+  <footer><a href="https://github.com/hoangduong92/sensei-agent">Mã nguồn và mô tả trên GitHub</a></footer>
+</body>
+</html>
